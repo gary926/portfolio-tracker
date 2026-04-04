@@ -1,0 +1,6 @@
+email_config.json
+portfolio_dashboard.html
+portfolio_latest.json
+__pycache__/
+*.pyc
+.DS_Store
