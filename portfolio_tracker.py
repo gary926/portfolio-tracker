@@ -28,16 +28,16 @@ except ImportError:
 # ── HOLDINGS ─────────────────────────────────────────────────
 CRYPTO = {
     'bitcoin':  {'symbol': 'BTC',  'name': 'Bitcoin',   'qty': 0.03737},
-    'dogecoin': {'symbol': 'DOGE', 'name': 'Dogecoin',  'qty': 3367.22204},
+    'dogecoin': {'symbol': 'DOGE', 'name': 'Dogecoin',  'qty': 3738.05026},
 }
 
 ETFS = {
-    'AGQ':  {'name': 'ProShares Ultra Silver',   'qty': 10.20},
-    'TQQQ': {'name': 'ProShares UltraPro QQQ',   'qty': 70.43},
+    'AGQ':  {'name': 'ProShares Ultra Silver',   'qty': 15.28},
+    'TQQQ': {'name': 'ProShares UltraPro QQQ',   'qty': 73.28},
     'VOOG': {'name': 'Vanguard S&P 500 Growth',  'qty': 3.58},
     'VOO':  {'name': 'Vanguard S&P 500 ETF',     'qty': 10.27},
     'SMH':  {'name': 'VanEck Semiconductor ETF', 'qty': 72.78},
-    'VGT':  {'name': 'Vanguard Info Tech ETF',   'qty': 12.02},
+    'VGT':  {'name': 'Vanguard Info Tech ETF',   'qty': 12.19},
 }
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
