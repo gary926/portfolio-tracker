@@ -441,6 +441,7 @@ def build_email_html(rows, total, total_chg, ts):
         <div style="font-size:20px;font-weight:800;color:#0f172a">{gainer['symbol']}</div>
         <div style="color:#64748b;font-size:12px">{gainer['name']}</div>
         <div style="color:#16a34a;font-size:18px;font-weight:800;margin-top:4px">+{gainer['chg_pct']:.2f}%</div>
+        <div style="color:#16a34a;font-size:13px;margin-top:2px">+${abs(gainer['chg_usd']):,.2f} today</div>
       </td>
       <td style="width:6%"></td>
       <td style="background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:14px 16px;width:47%;vertical-align:top">
@@ -448,6 +449,7 @@ def build_email_html(rows, total, total_chg, ts):
         <div style="font-size:20px;font-weight:800;color:#0f172a">{loser['symbol']}</div>
         <div style="color:#64748b;font-size:12px">{loser['name']}</div>
         <div style="color:#dc2626;font-size:18px;font-weight:800;margin-top:4px">{loser['chg_pct']:.2f}%</div>
+        <div style="color:#dc2626;font-size:13px;margin-top:2px">-${abs(loser['chg_usd']):,.2f} today</div>
       </td>
     </tr>
   </table>
