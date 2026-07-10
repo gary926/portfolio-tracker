@@ -1,6 +1,10 @@
 name: Daily Portfolio Tracker
+
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '35 1 * * *'
+
 jobs:
   run-tracker:
     runs-on: ubuntu-latest
@@ -15,7 +19,7 @@ jobs:
         run: pip install yfinance requests
       - name: Create email config from secrets
         run: |
-          printf '{"smtp_user":"%s","smtp_pass":"%s","to":"%s"}' "$GMAIL_USER" "$GMAIL_PASS" "$GMAIL_TO" > email_config.json
+          printf '{\"smtp_user\":\"%s\",\"smtp_pass\":\"%s\",\"to\":\"%s\"}' \"$GMAIL_USER\" \"$GMAIL_PASS\" \"$GMAIL_TO\" > email_config.json
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
