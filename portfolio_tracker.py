@@ -27,17 +27,17 @@ except ImportError:
 
 # ── HOLDINGS ─────────────────────────────────────────────────
 CRYPTO = {
-    'bitcoin':  {'symbol': 'BTC',  'name': 'Bitcoin',   'qty': 0.03737},
-    'dogecoin': {'symbol': 'DOGE', 'name': 'Dogecoin',  'qty': 4082.73520},
+    'bitcoin':  {'symbol': 'BTC',  'name': 'Bitcoin',   'qty': 0.04320},
+    'dogecoin': {'symbol': 'DOGE', 'name': 'Dogecoin',  'qty': 5873.35121},
 }
 
 ETFS = {
-    'AGQ':  {'name': 'ProShares Ultra Silver',   'qty': 15.28},
-    'TQQQ': {'name': 'ProShares UltraPro QQQ',   'qty': 75.45},
-    'VOOG': {'name': 'Vanguard S&P 500 Growth',  'qty': 23.24},
-    'VOO':  {'name': 'Vanguard S&P 500 ETF',     'qty': 10.47},
-    'SMH':  {'name': 'VanEck Semiconductor ETF', 'qty': 73.07},
-    'VGT':  {'name': 'Vanguard Info Tech ETF',   'qty': 98.77},
+    'AGQ':  {'name': 'ProShares Ultra Silver',   'qty': 19.54},
+    'TQQQ': {'name': 'ProShares UltraPro QQQ',   'qty': 80.55},
+    'VOOG': {'name': 'Vanguard S&P 500 Growth',  'qty': 26.35},
+    'VOO':  {'name': 'Vanguard S&P 500 ETF',     'qty': 11.21},
+    'SMH':  {'name': 'VanEck Semiconductor ETF', 'qty': 73.50},
+    'VGT':  {'name': 'Vanguard Info Tech ETF',   'qty': 103.08},
 }
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
