@@ -19,7 +19,7 @@ jobs:
         run: pip install yfinance requests
       - name: Create email config from secrets
         run: |
-          printf '{\"smtp_user\":\"%s\",\"smtp_pass\":\"%s\",\"to\":\"%s\"}' \"$GMAIL_USER\" \"$GMAIL_PASS\" \"$GMAIL_TO\" > email_config.json
+          python3 -c "import json, os; json.dump({'smtp_user': os.environ['GMAIL_USER'], 'smtp_pass': os.environ['GMAIL_PASS'], 'to': os.environ['GMAIL_TO']}, open('email_config.json', 'w'))"
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
